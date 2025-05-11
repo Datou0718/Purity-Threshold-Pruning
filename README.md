@@ -41,5 +41,5 @@ rf = PurityThresholdPruning(rf, tolerance, X_train, y_train)
 ```PurityThresholdPruning(forest, tolerance, X_train, y_train)```
 - forest: a fitted `RandomForestClassifier` with `oob_score=True`.
 - tolerance: Maximum tolerable accuracy drop in OOB estimation (e.g., `0.05` for 5%).
-- X, y: Training data (np.ndarray) used to compute OOB score.
+- X_train, y_train: Training data (np.ndarray) used to compute OOB score.
 Returns the `RandomForestClassifier` pruned with the minimum purity threshold.
